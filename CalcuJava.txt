@@ -1,0 +1,75 @@
+﻿import java.util.*;
+import java.util.Scanner;
+
+public class Calcu{
+  
+  public static void main(String[] args){
+    
+   int operacao;
+   int num1 = 10;
+   int num2 = 20;
+    
+   double som = num1 + num2;
+   double sub = num1 - num2;
+   double div = num1 / num2;
+   double mult = num1 * num2;
+   double porc = num1 * num2 /100;
+   double raiz1 = Math.sqrt ((num1));
+   double raiz2 = Math.sqrt ((num2));
+
+   Scanner input = new Scanner(System.in);  
+	      
+	      
+	    System.out.println("-Escolha uma opcao-");
+	    System.out.println("1. Soma");  
+	    System.out.println("2. Subtracao");  
+	    System.out.println("3. Divisao");  
+	    System.out.println("4. Multiplicacao");
+            System.out.println("5. Porcentagem");
+	    System.out.println("6. Raiz de 10");
+            System.out.println("7. Raiz de 20");        
+	    System.out.println("0. Sair");  
+	    System.out.println("Operacao: ");
+    
+        operacao = input.nextInt();
+    
+    
+    
+    switch(operacao)
+    {
+      
+      case 1:
+        System.out.println("Resultado" + som);
+       break;
+      
+      case 2:
+        System.out.println("Resultado" + sub);
+        break;
+      
+      case 3:
+        System.out.println("Resultado" + div);
+        break;
+      
+      case 4:
+        System.out.println("Resultado" + mult);
+        break;
+
+      case 5:
+        System.out.println("Resultado" + porc);
+        break;
+
+      case 6:
+        System.out.println("Resultado" + raiz1);
+        break;
+
+      case 7:
+        System.out.println("Resultado" + raiz2);
+        break;
+      
+      default:
+        System.out.println("operacao invalida");
+        break;
+    }
+  }
+}
+
